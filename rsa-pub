@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+# NOTE: This is an example that sets up SSH authorization. To use it, you'd need to replace "ssh-rsa AA... youremail@example.com" with your SSH public.
+# You can replace this entire script with anything you'd like, there is no need to keep it
+
+
+mkdir -p /root/.ssh
+chmod 600 /root/.ssh
+ssh-rsa AAAB3NzaC1yc2EAAAADAQABAAABAQC4sSXroxoRd12mSkOGaAje5wx1MkJWDlWWixB4xL94j+jWZplTpy3RtMAQLdskXwBK7O4T9ajrkCwymrw7RV39p/J7Yy/pihallsOXDI+sOm6eq66HyW+mUKkoPF3Mn0sLjsON9OIIytjxZT9pFI31wc7H3PyyySJZchQ3FEcXA6X3m0PwzcAdJ6zNzf5WwJYIUngir9nXbZQZ7eepiQLnS8Qy2WrOH3BNdDBbOk1hCxo8Jsu3qIQmI93EtaMvAf3GpNMKU/SaV83wPilkqbQwM7nwsNI1vIxMRjdFjKZrgIS6kxK4yXE3uB+jh0u3pqJNihnKrA/OtWW2qi3IluI9 zhou@zhou > /root/.ssh/authorized_keys
+chmod 700 /root/.ssh/authorized_keys
